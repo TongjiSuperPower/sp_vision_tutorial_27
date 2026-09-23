@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>launch_learning</name>
+  <version>0.0.0</version>
+  <description>ros2 launch</description>
+  <maintainer email="aabin@tongji.edu.cn">abin</maintainer>
+  <license>TODO: License declaration</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+
+  <!-- 被启动的节点所在的包。用 exec_depend 而不是 depend，
+       这样单独colcon build本包时不要求先装好它们，但运行时必须source到。 -->
+  <exec_depend>topic_learning_pub</exec_depend>
+  <exec_depend>topic_learning_sub</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

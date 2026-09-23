@@ -1,6 +1,5 @@
 .vscode/
 .github/
-build/
 Camera/
 logs/
 assets/img_with_q/
@@ -14,3 +13,11 @@ watchdog.sh
 records_24/
 records_25/
 partterns/
+# ROS2 / colcon build artifacts
+build/
+install/
+log/
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
